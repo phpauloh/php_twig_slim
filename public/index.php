@@ -12,8 +12,7 @@ $app->group("/admin", function() use($app){
     });
 });*/
 
-$app->get("/", function(Request $req, Response $resp, array $args){
-    dd($req);
-});
+$app->get('/', 'app\controllers\HomeController:index');
+$app->get('/show/{id}', 'app\controllers\UserController:show');
 
 $app->run();
