@@ -7,3 +7,7 @@ function dd($data){
     
     die();
 }
+
+function replace($data){
+    return str_replace("/", ".", $data . ".html");
+}
