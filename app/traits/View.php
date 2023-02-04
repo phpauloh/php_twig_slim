@@ -16,7 +16,7 @@ trait View{
     }
 
     protected function functions(){
-
+        //building
     }
 
     protected function load(){

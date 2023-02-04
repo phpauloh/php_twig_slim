@@ -13,6 +13,6 @@ $app->group("/admin", function() use($app){
 });*/
 
 $app->get('/', 'app\controllers\HomeController:index');
-$app->get('/show/{id}', 'app\controllers\UserController:show');
+$app->get('/contato', 'app\controllers\ContatoController:index');
 
 $app->run();
